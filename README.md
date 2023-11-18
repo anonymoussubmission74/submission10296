@@ -9,7 +9,7 @@ The lmplementation for submission 10296
 
 ## Data Preparation
 
-The datasets are provided in the anonymous [link](https://drive.google.com/drive/folders/1x36Dpv7FMSxx6LtVmwiFkyhKhTG3u1bI?usp=sharing).
+The datasets are provided in the anonymous [link](https://drive.google.com/drive/folders/1x36Dpv7FMSxx6LtVmwiFkyhKhTG3u1bI?usp=sharing), and place it into `./dataset`.
 
 ```
 dataset
