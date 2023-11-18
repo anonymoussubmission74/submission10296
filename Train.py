@@ -48,7 +48,7 @@ def test(model, path, dataset):
         image = image.cuda()
 
         res1, res2, res3, res4, res5, res6 = model(image)
-        res = F.upsample(res1 + res2 + res3 + res4 + res5 + res6, size=gt.shape, mode='bilinear', align_corners=False)
+        res = F.interpolate(res1 + res2 + res3 + res4 + res5 + res6, size=gt.shape, mode='bilinear', align_corners=False)
         res = res.sigmoid().data.cpu().numpy().squeeze()
         res = (res - res.min()) / (res.max() - res.min() + 1e-8)
         input = res
@@ -79,8 +79,8 @@ def train(train_loader, model, optimizer, epoch, test_path):
             # ---- rescale ----
             trainsize = int(round(opt.trainsize * rate / 32) * 32)
             if rate != 1:
-                images = F.upsample(images, size=(trainsize, trainsize), mode='bilinear', align_corners=True)
-                gts = F.upsample(gts, size=(trainsize, trainsize), mode='bilinear', align_corners=True)
+                images = F.interpolate(images, size=(trainsize, trainsize), mode='bilinear', align_corners=True)
+                gts = F.interpolate(gts, size=(trainsize, trainsize), mode='bilinear', align_corners=True)
             # ---- forward ----
             P1, P2, P3, P4, P5, P6 = model(images)
             
