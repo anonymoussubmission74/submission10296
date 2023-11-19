@@ -9,8 +9,8 @@ The lmplementation for submission 10296
 
 ## Data Preparation
 
-The Polyp dataset are provided in the anonymous [link](https://drive.google.com/drive/folders/1dENCMZGWty8ikF7HtVySzZOKMJ8yuxr4?usp=sharing), and place it into `./dataset`.
-The BUSI dataset can be found in this [link](https://scholar.cu.edu.eg/?q=afahmy/pages/dataset).
+The Polyp dataset are provided in the anonymous [link](https://drive.google.com/drive/folders/1dENCMZGWty8ikF7HtVySzZOKMJ8yuxr4?usp=sharing), and place it into `./dataset`. \\
+The BUSI dataset can be found in this [link](https://scholar.cu.edu.eg/?q=afahmy/pages/dataset). \\
 The 2018-DSB dataset can be found in this [link](https://bbbc.broadinstitute.org/BBBC038/).
 
 ```
