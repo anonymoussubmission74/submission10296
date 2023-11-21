@@ -46,18 +46,18 @@ pretrained_pth
 
 ## Training
 
-Run the command scripts in `run/` to train models on different datasets. For example,  to train a breast ultrasound image segmentation model, run:
+Run the command scripts in `run/` to train models on different datasets. For example,  to train a polyp segmentation model, run:
 
 ```
-sh run/train_busi.sh
+sh run/train_polyp.sh
 ```
 
 ## Evaluating
 
-The trained model are provided in the following anonymous links ([DSNet_BUSI](https://drive.google.com/file/d/1XFV-D0AfsiaWkx-9Q8kS9wTIX6rleY55/view?usp=sharing), [DSNet_DSB](https://drive.google.com/file/d/1i0rskLdInlGuR0slUO8DTCq2ITIcwuVw/view?usp=sharing), [DSNet_Polyp](https://drive.google.com/file/d/1Ove07h2nCHv6L0UFRboEbyjgiAf7jvD-/view?usp=sharing)). To evaluate them, download the model file and place it into `./model` and then run the command script in `run/`. For example,  to evaluate a breast ultrasound image segmentation model, run:
+The trained model are provided in the following anonymous links ([DSNet_BUSI](https://drive.google.com/file/d/1XFV-D0AfsiaWkx-9Q8kS9wTIX6rleY55/view?usp=sharing), [DSNet_DSB](https://drive.google.com/file/d/1i0rskLdInlGuR0slUO8DTCq2ITIcwuVw/view?usp=sharing), [DSNet_Polyp](https://drive.google.com/file/d/1Ove07h2nCHv6L0UFRboEbyjgiAf7jvD-/view?usp=sharing)). To evaluate them, download the model file and place it into `./model` and then run the command script in `run/`. For example,  to evaluate a polyp segmentation model, run:
 
 ```
-sh run/test_busi.sh
+sh run/test_polyp.sh
 ```
 
 
